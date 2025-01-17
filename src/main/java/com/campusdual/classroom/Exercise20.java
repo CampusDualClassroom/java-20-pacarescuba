@@ -15,13 +15,12 @@ public class Exercise20 {
   }
 
   public static void showPeopleDetails(List<Person> stringList) {
-    for (int i = 0; i < stringList.size(); i++) {
-      stringList.get(i).getDetails();
+    for (Person person : stringList) {
+      person.getDetails();
     }
   }
 
   public static void main(String[] args) {
-    List<Person> stringList = getPeopleList();
-    showPeopleDetails(stringList);
+    showPeopleDetails(getPeopleList());
   }
 }
